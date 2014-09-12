@@ -166,10 +166,33 @@ Praktikant: &  Michael Lohmann\\
 
 \section{Einleitung}
 \label{sec:einleitung}
+Dioden sind technische Bauelemente, die nur einen Stromfluss in eine Richtung zulassen.
+Vakuum-Dioden sind die wohl einfachsten, wenn auch heutzutage nicht mehr die gebräuchlichsten.
+Ihre wichtigsten Kennlinien zu vermessen, kann daher Erkenntnisse für komplexere Aufbauten, wie zum Beispiel Halbleiterdioden, liefern.
+
 \cite{gerthsen}
 
 \section{Theorie}
 \label{sec:theorie}
+Eine Vakuum-Diode besteht aus einem Kathode-Anode-Paar, welches in einem Vakuum-Behältnis eingelassen ist.
+Die Kathode besteht aus einer Glühlampe, welche regelbar beheizt werden kann.
+\subsection{Austrittsarbeit der Elektronen}
+Die Elektronen benötigen eine gewisse Energie um aus dem Draht auszutreten und zur Anode zu gelangen.
+Sie wird dafür benötigt, sich aus dem positiv geladenen Gitter des Drahtes herauszulösen.
+Diese Energie ist jedoch relativ hoch, so dass bei den hier verwendeten Spannungen kein Strom zu messen sein sollte.
+Da die Kathode jedoch beheizt wird, bekommen die Elektronen im Draht eine thermische (und damit kinetische) Energie.
+Dies ist auch der Grund, warum die Vakuum-Diode einen Elektronenfluss von der Anode zur Kathode verhindert.
+Nicht alle Elektronen sind jedoch gleich schnell, so dass einige mehr kinetische besitzen als andere.
+Die Verteilung der Geschwindigkeiten basiert auf der \textsc{Fermi}-Verteilung.
+Der sich so ergebende Strom verhält sich nach der \textsc{Richardson}\emph{-Gleichung}:
+\begin{align}
+	j_R=A_R\cdot T^{2}\cdot \exp\left(-\frac{W_A}{k_BT}\right)\label{eq:richardson}\; .
+\end{align}
+Wobei $A_R\approx \SI{6e-3}{\ampere\meter^{-2}\kelvin^{-2}}$ die Richardson-Konstante darstellt.
+Sie ist für alle reinen Metalle etwa gleich.
+Zur Veringerung der Austrittsarbeit $W_A$ können Metalle mit Alkalimetallen oder Barium-Oxid überzogen werden, da diese eine geringere besitzen.
+
+
                                                                                                                                                                       
 \section{Durchführung}
 \label{sec:durchfuehrung}
