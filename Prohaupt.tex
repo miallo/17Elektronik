@@ -127,7 +127,7 @@
 
 \rule{\textwidth}{1pt}\\[0.5cm]
 {\huge \bfseries
-  Versuch Elektronik\\[1.5ex]
+  Versuch Kennlinien der Vakuum-Diode\\[1.5ex]
   Protokoll}\\[0.5cm]
 \rule{\textwidth}{1pt}
 
@@ -143,8 +143,8 @@ Praktikant: &  Michael Lohmann\\
  &  felix.kurtz@stud.uni-goettingen.de\\
 % &  kevin.luedemann@stud.uni-goettingen.de\\
 % &  skrollan.detzler@stud.uni-goettingen.de\\
- Betreuer: & ***************************\\
- Versuchsdatum: & **************************.2014\\
+ Betreuer: &Björn Klaas\\
+ Versuchsdatum: & 12.09.2014\\
 \end{tabular}
 \end{Large}
 
@@ -190,31 +190,39 @@ Der sich so ergebende Strom verhält sich nach der \textsc{Richardson}\emph{-Gle
 \end{align}
 Wobei $A_R\approx \SI{6e-3}{\ampere\meter^{-2}\kelvin^{-2}}$ die Richardson-Konstante darstellt.
 Sie ist für alle reinen Metalle etwa gleich.
-Zur Veringerung der Austrittsarbeit $W_A$ können Metalle mit Alkalimetallen oder Barium-Oxid überzogen werden, da diese eine geringere besitzen.
+Zur Verringerung der Austrittsarbeit $W_A$ können Metalle mit Alkalimetallen oder Barium-Oxid überzogen werden, da diese eine geringere besitzen.
 
 
                                                                                                                                                                       
 \section{Durchführung}
 \label{sec:durchfuehrung}
+Zunächst baut man die Schaltung auf.
+Dabei ist darauf zu achten, dass die Schutzringe zwarauf dem Anodenpotential sind, aber der darüber fließende Strom nicht fälschlicher weise als Anodenstrom gmessen wird.\\
+Dann wählt man drei verschiedene Heizströme zwischen 1.9 A und 2 A und zeichnet für sie jeweils zu unterschiedlichen Anodenspannungen die zugehörigen Anodenströme auf.
+Im Bereich des Anlaufsstroms und der Raumladung sollten die Messungen in höchstens 2 V-Schritten erfolgen.
 
 \section{Auswertung}
 \label{sec:auswertung}
 \begin{figure}
+	\centering
 	\input{heiz18}
 	\caption{Auftragung des Anodenstroms gegen die Anodenspannung bei einem Heizstrom von $I_\text H$=1.8A}
 	\label{fig:h18}
 \end{figure}
 \begin{figure}
+	\centering
 	\input{heiz19}
 	\caption{Auftragung des Anodenstroms gegen die Anodenspannung bei einem Heizstrom von $I_\text H$=1.9A}
 	\label{fig:h19}
 \end{figure}
 \begin{figure}
+	\centering
 	\input{heiz2}
 	\caption{Auftragung des Anodenstroms gegen die Anodenspannung bei einem Heizstrom von $I_\text H$=2A}
 	\label{fig:h2}
 \end{figure}
 \begin{figure}
+	\centering
 	\input{heiz}
 	\caption{Auftragung des Anodenstroms gegen die Anodenspannung bei unterschiedlichen Heizströmen}
 	\label{fig:h}
@@ -222,6 +230,9 @@ Zur Veringerung der Austrittsarbeit $W_A$ können Metalle mit Alkalimetallen ode
 
 \section{Diskussion}
 \label{sec:diskussion}
+Das extra bereitstehende genauere analoge Amperemeter konnte leider auch die niedrigen Ströme nicht messen, da auch sie zu groß für das Gerät waren.
+Auch bei der Messung des Anlaufstroms wirkte es nicht zuverlässig, da es über einen mehrere Volt großen Bereich keinen Strom anzeigte.
+Daraufhin verwendeten wir nur die digitalen Messgeräte.
 
 \bibliography{literatur}
 \bibliographystyle{babalpha}
