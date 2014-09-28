@@ -238,24 +238,22 @@ Im Bereich des Anlaufstroms und der Raumladung sollten die Messungen in höchste
 
 \section{Auswertung}
 \label{sec:auswertung}
-\begin{figure}[!h]
-	\centering
-	\input{heiz18}
-	\caption{Auftragung des Anodenstroms gegen die Anodenspannung bei einem Heizstrom von $I_\text H$=1.8A}
-	\label{fig:h18}
+\begin{figure}[h]
+  \centering
+  \subfigure[$I_\text H=1.8\,$A\label{fig:heiz18}]
+  {\begin{adjustbox}{width=0.48\linewidth}\input{heiz18}\end{adjustbox}}
+  \hfill
+  \subfigure[$I_\text H=1.9\,$A\label{fig:heiz19}]
+  {\begin{adjustbox}{width=0.48\linewidth}\input{heiz19}\end{adjustbox}}
+  \hfill
+  \subfigure[$I_\text H=2.0\,$A\label{fig:heiz2}]
+  {\begin{adjustbox}{width=0.48\linewidth}\input{heiz2}\end{adjustbox}}
+  \caption{Auftragung des Anodenstroms gegen die Anodenspannung bei verschiedenen Heizströmen}
+  \label{fig:heiz}
 \end{figure}
-\begin{figure}[!h]
-	\centering
-	\input{heiz19}
-	\caption{Auftragung des Anodenstroms gegen die Anodenspannung bei einem Heizstrom von $I_\text H$=1.9A}
-	\label{fig:h19}
-\end{figure}
-\begin{figure}[!h]
-	\centering
-	\input{heiz2}
-	\caption{Auftragung des Anodenstroms gegen die Anodenspannung bei einem Heizstrom von $I_\text H$=2A}
-	\label{fig:h2}
-\end{figure}
+
+
+
 \begin{figure}[!h]
 	\centering
 	\input{heiz}
@@ -282,7 +280,7 @@ Im Bereich des Anlaufstroms und der Raumladung sollten die Messungen in höchste
 \centering
 \begin{tabular}{|c|c|c|}
 \hline
-$I_\text H\,$[A]& $a\,\left[\sfrac{\text A^{2/3}}{\text V}\right]$	& $b\,\left[\text A^{2/3}\right]$			\\\hline\hline
+$I_\text H\,$[A]& $a\,\left[\frac{\text A^{2/3}}{\text V}\right]$	& $b\,\left[\text A^{2/3}\right]$			\\\hline\hline
 1.8 		& $0.125\pm 0.003$	& $0.173\pm 0.011$	\\\hline
 1.9 		& $0.1302\pm0.0009$ 	& $0.211\pm 0.005$	\\\hline
 2.0 		& $0.1302\pm 0.0016$	& $0.242 \pm 0.014$	\\\hline
