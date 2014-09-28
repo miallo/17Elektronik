@@ -46,4 +46,4 @@ fit f2(x) 'heiz19.dat' u 3:(($2**2)**0.333333333) via a,b
 p 'heiz19.dat' u 3:(($2**2)**0.333333333) t'$I_\text{H}=\SI{1.9}{\ampere}$', f2(x) t'Lineare Regression'
 
 set output
-!epstopdf raumladung18.eps
+!epstopdf raumladung19.eps
