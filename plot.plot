@@ -38,3 +38,15 @@ p 'heiz2.dat' u 3:2 t'$I_\text{H}=\SI{2.0}{\ampere}$','heiz19.dat' u 3:2 t'$I_\t
 
 set output
 !epstopdf heiz.eps
+
+
+
+set output 'raumladung.tex'
+set xlabel 'Spannung U $[V]$'
+set ylabel 'Anodenstrom $I_\text A \; [A]$'
+set key bottom right
+
+p 'heiz2.dat' u 3:($2**(2/3)) t'$I_\text{H}=\SI{2.0}{\ampere}$'
+
+set output
+!epstopdf raumladung.eps

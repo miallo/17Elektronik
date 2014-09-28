@@ -69,6 +69,21 @@
 %   \label{fig:label-gesamt}
 % \end{figure}
 \usepackage{subfigure}
+\usepackage{adjustbox}
+%\begin{figure}[h]
+%  \centering
+%  \subfigure[Caption1\label{fig:bild1}]
+%  {\begin{adjustbox}{width=0.44\linewidth}\input{bild1}\end{adjustbox}}
+%  \hfill
+%  \subfigure[Caption2\label{bild2}]
+%  {\begin{adjustbox}{width=0.44\linewidth}\input{bild2}\end{adjustbox}}
+%  \hfill
+%  \subfigure[Caption3\label{bild3}]
+%  {\begin{adjustbox}{width=0.44\linewidth}\input{bild3}\end{adjustbox}}
+%  \caption{$u$ und $v$ gegen $t$ und $u$ gegen $v$ aufgetragen für $b=0.4$}
+%  \label{fig:gesamtlabel}
+%\end{figure}
+
 
 % Caption neben Abbildung
 % Beispiel:
@@ -248,6 +263,17 @@ Im Bereich des Anlaufstroms und der Raumladung sollten die Messungen in höchste
 	\label{fig:h}
 \end{figure}
 
+
+\begin{figure}[h]
+   \centering
+   \subfigure[$I_\text A=1.8\,$A\label{fig:raum18}]
+   {\begin{adjustbox}{width=0.48\linewidth}\input{raumladung18}\end{adjustbox}}
+   \hfill
+   \subfigure[$I_\text A=2.0\,$A\label{fig:raum2}]
+   {\begin{adjustbox}{width=0.48\linewidth}\input{raumladung2}\end{adjustbox}}
+   \caption{Auftragung des Anodenstroms zur Potenz $\frac{2}{3}$ gegen die Anodenspannung bei verchiedenen Heizströmen im Raumladungsgebiet}
+   \label{fig:raumladung}
+ \end{figure}
 \section{Diskussion}
 \label{sec:diskussion}
 Das extra bereitstehende genauere analoge Amperemeter konnte leider auch die niedrigen Ströme nicht messen, da auch sie zu groß für das Gerät waren.
