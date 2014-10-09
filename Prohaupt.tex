@@ -189,9 +189,17 @@ Ihre wichtigsten Kennlinien zu vermessen, kann daher Erkenntnisse für komplexer
 
 \section{Theorie}
 \label{sec:theorie}
+\section{Magnetfelder}
+Die \emph{Maxwellschen Gleichungen} beschreiben elektrische und magnetische Felder.
+Es gilt 
+\begin{align*}
+\nabla\cdot\vec B&=0\\
+\nabla\times\vec H&=\vec j +\frac{\partial \vec D}{\partial t}
+\end{align*}
+
+\subsection{Austrittsarbeit der Elektronen}
 Eine Vakuum-Diode besteht aus einem Kathode-Anode-Paar, welches in einem Vakuum-Behältnis eingelassen ist.
 Die Kathode besteht aus einer Glühlampe, welche regelbar beheizt werden kann.
-\subsection{Austrittsarbeit der Elektronen}
 Die Elektronen benötigen eine gewisse Energie um aus dem Draht auszutreten und zur Anode zu gelangen.
 Sie wird dafür benötigt, sich aus dem positiv geladenen Gitter des Drahtes herauszulösen.
 Diese Energie ist jedoch relativ hoch, so dass bei den hier verwendeten Spannungen kein Strom zu messen sein sollte.
@@ -222,7 +230,9 @@ Aber da die Energien \textsc{Maxwell}-verteilt sind, haben einzelne Elektronen a
 \caption{Stromfluss gegen die Anodenspannung aufgetragen von \cite[8.10.14, 12 Uhr]{LP17}}
 \label{fig:strombild}
 \end{figure}
+
 Die folgenden Bereiche beziehen sich auf Abb. \ref{fig:strombild}.
+
 Der \textbf{Anlaufstrom} ist der Strom, der fließt, ohne, dass eine Spannung zwischen den Elektroden anliegt.
 Dieser ist nicht verschwindend, da aus der Kathode gelöste Elektronen durch Zufall auf die Anode auftreffen können.
 
@@ -245,11 +255,15 @@ In diesem sind keine Elektronen mehr im Raumladungsbereich vorhanden und um eine
 \end{figure}
 Zunächst baut man die Schaltung aus Abb. \ref{fig:aufbau} auf.
 Dabei ist darauf zu achten, dass die Schutzringe zwar auf dem Anodenpotential sind, aber der darüber fließende Strom nicht fälschlicher weise als Anodenstrom gmessen wird.\\
-Dann wählt man drei verschiedene Heizströme zwischen 1.9 A und 2 A und zeichnet für sie jeweils zu unterschiedlichen Anodenspannungen die zugehörigen Anodenströme auf.
+Dann wählt man drei verschiedene Heizströme zwischen 1.8 A und 2 A und zeichnet für sie jeweils zu unterschiedlichen Anodenspannungen die zugehörigen Anodenströme auf.
 Im Bereich des Anlaufstroms und der Raumladung sollten die Messungen in höchstens 2 V-Schritten erfolgen.
 
 \section{Auswertung}
 \label{sec:auswertung}
+In Abb. \ref{fig:heiz} werden für verschiedene Heizströme die gemessenen Anodenströme aufgetragen.
+Die Achsen sind für die einzelnen Plots bewusst anders skaliert.
+Die Grafik \ref{fig:h} zeigt alle Messungen zusammen.
+Dabei kann man klar erkennen, dass mit steigendem Heizstrom auch ein deutlich höherer Anodenstrom fließen kann.
 \begin{figure}[h]
   \centering
   \subfigure[$I_\text H=1.8\,$A\label{fig:heiz18}]
@@ -305,6 +319,9 @@ $I_\text H\,$[A]& $a\,\left[\frac{\text A^{2/3}}{\text V}\right]$	& $b\,\left[\t
 Das extra bereitstehende genauere analoge Amperemeter konnte leider auch die niedrigen Ströme nicht messen, da auch sie zu groß für das Gerät waren.
 Auch bei der Messung des Anlaufstroms wirkte es nicht zuverlässig, da es über einen mehrere Volt großen Bereich keinen Strom anzeigte.
 Daraufhin verwendeten wir nur die digitalen Messgeräte.
+
+In Abb. \ref{fig:heiz} kann man erkennen, dass für die $2\,$A Messungen viele Messungen im Anlaufstrombereich gemacht wurden.
+Für die $1.8\,$A Messung wurde dies kaum noch getan, so dass sich hier kaum Aussagen für diesen Bereich machen lassen.
 
 \bibliography{literatur}
 \bibliographystyle{babalpha}
