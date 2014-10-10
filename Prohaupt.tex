@@ -189,21 +189,13 @@ Ihre wichtigsten Kennlinien zu vermessen, kann daher Erkenntnisse für komplexer
 
 \section{Theorie}
 \label{sec:theorie}
-\section{Magnetfelder}
-Die \emph{Maxwellschen Gleichungen} beschreiben elektrische und magnetische Felder.
-Es gilt 
-\begin{align*}
-\nabla\cdot\vec B&=0\\
-\nabla\times\vec H&=\vec j +\frac{\partial \vec D}{\partial t}
-\end{align*}
-
 \subsection{Austrittsarbeit der Elektronen}
 Eine Vakuum-Diode besteht aus einem Kathode-Anode-Paar, welches in einem Vakuum-Behältnis eingelassen ist.
 Die Kathode besteht aus einer Glühlampe, welche regelbar beheizt werden kann.
-Die Elektronen benötigen eine gewisse Energie um aus dem Draht auszutreten und zur Anode zu gelangen.
+Die Elektronen benötigen eine gewisse Energie $W_A$ um aus dem Draht auszutreten und zur Anode zu gelangen.
 Sie wird dafür benötigt, sich aus dem positiv geladenen Gitter des Drahtes herauszulösen.
 Diese Energie ist jedoch relativ hoch, so dass bei den hier verwendeten Spannungen kein Strom zu messen sein sollte.
-Da die Kathode jedoch beheizt wird, bekommen die Elektronen im Draht eine thermische (und damit kinetische) Energie.
+Da die Kathode jedoch auf eine Temperatur $T$ geheizt wird, bekommen die Elektronen im Draht eine thermische (und damit kinetische) Energie.
 Dies ist auch der Grund, warum die Vakuum-Diode einen Elektronenfluss von der Anode zur Kathode verhindert.
 Nicht alle Elektronen sind jedoch gleich schnell, so dass einige mehr kinetische besitzen als andere.
 Die Verteilung der Geschwindigkeiten basiert auf der \textsc{Fermi}-Verteilung.
@@ -239,6 +231,10 @@ Dieser ist nicht verschwindend, da aus der Kathode gelöste Elektronen durch Zuf
 Der \textbf{Raumladungsbereich} ist der Bereich in der Anodenspannung, in dem der Anodenstrom ungefähr linear ansteigt.
 Dies geschieht dadurch, dass genügend Elektronen aus der Kathode durch die thermische Energie herausgelöst werden.
 Es können sich aber nicht alle herausgelösten Elektronen zur Anode bewegen, da Elektronen, die schon auf dem Weg sind, das elektrische Feld abschirmen.
+Hier gilt nach \cite[S. 475]{gerthsen} das \textsc{Schoty-Lamour}sche Raumladungsgesetz:
+\begin{align}
+j=\frac{4}{9}\varepsilon_0\cdot\sqrt\frac{2e}{m_e}\frac{U^{3/2}}{d^2}\, .\label{eq:rauml}
+\end{align}
 
 Wird die \textbf{Anodenspannung} jedoch immer größer, so ist irgendwann ein Sättigungsbereich erreicht.
 In diesem sind keine Elektronen mehr im Raumladungsbereich vorhanden und um einen höheren Anodenstrom zu erziehlen, muss die Anodenspannung sehr viel größer werden.
@@ -255,8 +251,10 @@ In diesem sind keine Elektronen mehr im Raumladungsbereich vorhanden und um eine
 \end{figure}
 Zunächst baut man die Schaltung aus Abb. \ref{fig:aufbau} auf.
 Dabei ist darauf zu achten, dass die Schutzringe zwar auf dem Anodenpotential sind, aber der darüber fließende Strom nicht fälschlicher weise als Anodenstrom gmessen wird.\\
-Dann wählt man drei verschiedene Heizströme zwischen 1.8 A und 2 A und zeichnet für sie jeweils zu unterschiedlichen Anodenspannungen die zugehörigen Anodenströme auf.
+Dann wählt man drei verschiedene Heizströme zwischen 1.8 A und 2 A und zeichnet für sie jeweils zu unterschiedlichen Anodenspannungen zwischen $-10\,$V und $150\,$V die zugehörigen Anodenströme auf.
 Im Bereich des Anlaufstroms und der Raumladung sollten die Messungen in höchstens 2 V-Schritten erfolgen.
+Die Spannung soll soweit heruntergeregelt werden, bis kein Anodenstrom mehr messbar ist.
+Auch der Bereich um $U_A=0\,$V soll sehr genau vermessen werden.
 
 \section{Auswertung}
 \label{sec:auswertung}
