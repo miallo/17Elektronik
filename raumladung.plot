@@ -1,7 +1,7 @@
 reset
 set terminal epslatex color
 set output 'raumladung2.tex'
-set xlabel 'Spannung U $[V]$'
+set xlabel 'Spannung $[\frac{U}{1\,\si{\ampere}}]$'
 set ylabel 'Anodenstrom $\left(\frac{I_\text A}{1\,\text A}\right)^{2/3}$'
 set key bottom right
 set xrange [*:18]
