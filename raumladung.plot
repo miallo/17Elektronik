@@ -10,7 +10,7 @@ f2(x)=a*x+b
 set fit logfile 'raum2.log'
 fit f2(x) 'heiz2.dat' u 3:(($2**2)**0.333333333) via a,b
 
-p 'heiz2.dat' u 3:(($2**2)**0.333333333) t'$I_\text{H}=\SI{2.0}{\ampere}$', f2(x) t'Lineare Regression'
+p 'heiz2.dat' u 3:(($2**2)**0.333333333):($3*0.008):(($2*0.0025)**0.666666666) w xyerrorbars t'$I_\text{H}=\SI{2.0}{\ampere}$', f2(x) t'Lineare Regression'
 
 set output
 !epstopdf raumladung2.eps
@@ -27,7 +27,7 @@ f2(x)=a*x+b
 set fit logfile 'raum18.log'
 fit f2(x) 'heiz18.dat' u 3:(($2**2)**0.333333333) via a,b
 
-p 'heiz18.dat' u 3:(($2**2)**0.333333333) t'$I_\text{H}=\SI{1.8}{\ampere}$', f2(x) t'Lineare Regression'
+p 'heiz18.dat' u 3:(($2**2)**0.333333333):($3*0.008):(($2*0.0025)**0.666666666) w xyerrorbars t'$I_\text{H}=\SI{1.8}{\ampere}$', f2(x) t'Lineare Regression'
 
 set output
 !epstopdf raumladung18.eps
@@ -43,7 +43,7 @@ f2(x)=a*x+b
 set fit logfile 'raum19.log'
 fit f2(x) 'heiz19.dat' u 3:(($2**2)**0.333333333) via a,b
 
-p 'heiz19.dat' u 3:(($2**2)**0.333333333) t'$I_\text{H}=\SI{1.9}{\ampere}$', f2(x) t'Lineare Regression'
+p 'heiz19.dat' u 3:(($2**2)**0.333333333):($3*0.008):(($2*0.0025)**0.666666666) w xyerrorbars t'$I_\text{H}=\SI{1.9}{\ampere}$', f2(x) t'Lineare Regression'
 
 set output
 !epstopdf raumladung19.eps
