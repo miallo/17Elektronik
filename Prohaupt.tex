@@ -185,7 +185,6 @@ Dioden sind technische Bauelemente, die nur einen Stromfluss in eine Richtung zu
 Vakuum-Dioden sind die wohl einfachsten, wenn auch heutzutage nicht mehr die gebräuchlichsten.
 Ihre wichtigsten Kennlinien zu vermessen, kann daher Erkenntnisse für komplexere Aufbauten, wie zum Beispiel Halbleiterdioden, liefern.
 
-\cite{gerthsen}
 
 \section{Theorie}
 \label{sec:theorie}
@@ -288,7 +287,7 @@ Der Strommessung des Anodenstroms wurde eine Ungenauigkeit von $\sigma_{I_A}= I_
 
 \subsection{Raumladung}
 In Abbildung \ref{fig:raumladung} wird der Anodenstrom zur Potenz $\frac{2}{3}$ gegen die Anodenspannung aufgetragen.
-Die Unterabbildungen zeigen hierbei die Daten für verchiedene Heizströme im Raumladungsgebiet.
+Die Unterabbildungen zeigen hierbei die Daten für verschiedene Heizströme im Raumladungsgebiet.
 Nach Formel \eqref{eq:rauml} ist ein linearer Zusammenhang hier zu erwarten.
 Dieser gelt natürlich nur im Raumladungsgebiet, so dass auch nur dieser aufgetragen ist.
 
@@ -296,6 +295,18 @@ Die Gauß'sche Fehlerfortpflanzung liefert $\sigma_{I_A^{2/3}}=\frac{2\sigma_{a}
 Die Werte der linearen Regression sind in Tabelle \ref{tab:ParaRaum} zu finden.
 Die ermittelten Werte haben eine Unsicherheit von höchstens $\sigma_a = 2.3\%$ und $\sigma_b=5.9\%$ und das reduzierte $\chi^2$ beträgt höchstens $0.2\%$.
 Dies bedeutet, dass die Werte eine deutliche lineare Korrelation aufweisen.
+
+Um die Kontaktspannung $U_K$ zu ermitteln, kann $0=a\cdot x + b$ umgestellt werden nach 
+\begin{align*}
+U_K &= -\frac{b}{a} \text{ mit}\\
+\sigma_{U_K} &= \sqrt{\frac{\sigma_b^2}{a^2}+\frac{\sigma_a^2 \cdot b^2}{a^4}}\, .
+\end{align*}
+Die sich ergebenden Werte können ebenfalls in Tabelle \ref{tab:ParaRaum} entnommen werden.\\
+
+
+
+$U_K$ BERECHNEN!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 
 \begin{figure}[h]
    \centering
@@ -316,13 +327,15 @@ Dies bedeutet, dass die Werte eine deutliche lineare Korrelation aufweisen.
 \begin{tabular}{|c|c|c|}
 \hline
 $I_\text H\,$[A]& $a\,\left[\frac{\text A^{2/3}}{\text V}\right]$	& $b\,\left[\text A^{2/3}\right]$			\\\hline\hline
-1.8 		& $0.125\pm 0.003$	& $0.173\pm 0.011$	\\\hline
+1.8 		& $0.125\pm 0.003$		& $0.173\pm 0.011$	\\\hline
 1.9 		& $0.1302\pm0.0009$ 	& $0.211\pm 0.005$	\\\hline
 2.0 		& $0.1302\pm 0.0016$	& $0.242 \pm 0.014$	\\\hline
 \end{tabular}
 \caption{Parameter aus den Linearen Regressionen von Abb. \ref{fig:raumladung}}
 \label{tab:ParaRaum}
 \end{table}
+
+
 \section{Diskussion}
 \label{sec:diskussion}
 Das extra bereitstehende genauere analoge Amperemeter konnte leider auch die niedrigen Ströme nicht messen, da auch sie zu groß für das Gerät waren.
@@ -334,6 +347,9 @@ Für die $1.8\,$A Messung wurde dies kaum noch getan, so dass sich hier kaum Aus
 
 Dennoch lassen die Werte aus Tabelle \ref{tab:ParaRaum} den Raumladungsbereich eingrenzen.
 Für $1.8\,$A 
+
+
+Die berechneten Werte der Kontaktspannung $U_K$ 
 
 \bibliography{literatur}
 \bibliographystyle{babalpha}
