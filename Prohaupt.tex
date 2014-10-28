@@ -314,11 +314,15 @@ I &= c\cdot U_\text{ges} = c\cdot \left( U_K+U_B \right)\\
 \Rightarrow \ln (I) &= \ln c + \frac{2}{3} \ln \left( U_K + U_B \right)
 \end{align}
 für ein $c$ zu erwarten.
+
+Wird nun $I$ gegen $U_\text{ges}$ doppelt logarithmisch aufgetragen, so sollte sich eine Geradensteigung von $m=\frac{2}{3}$ ergeben.
 Die Fehlerrechnung nach Gauss führt zu
 \begin{align}
-\sigma_{\ln\left( U_K + U_B \right)} &= \frac{\sigma_{U_K}^2 + \sigma_{U_B}^2}{U_K + U_B}\\
-\sigma_{\ln I} &= \frac{\sigma_I}{I}
+\sigma_{\ln\left( U_K + U_B \right)}^2 &= \frac{\sigma_{U_K}^2 + \sigma_{U_B}^2}{U_K + U_B}\, \text{und}\\
+\sigma_{\ln I} &= \frac{\sigma_I}{I}\,.
 \end{align}
+
+Dieser Plot ist in Abb. \ref{fig:expRauml} zu sehen.
 
 \begin{figure}[h]
    \centering
@@ -347,6 +351,12 @@ $I_\text H\,$[A]& $a\,\left[\frac{\text A^{2/3}}{\text V}\right]$	& $b\,\left[\t
 \label{tab:ParaRaum}
 \end{table}
 
+\begin{figure}[!h]
+\centering
+%\includegraphics{expRauml}
+\caption{Doppeltlogarithmische Auftragung von des Anodenstroms gegen die Anodenspannung.}
+\label{fig:expRauml}
+\end{figure}
 
 \section{Diskussion}
 \label{sec:diskussion}
