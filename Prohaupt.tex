@@ -319,7 +319,7 @@ Die Fehlerrechnung nach Gauss führt zu
 \sigma_{\ln I} &= \frac{\sigma_I}{I}\,.
 \end{align}
 
-Dieser Plot ist in Abb. \ref{fig:expRauml} zu sehen.
+Dieser Plot ist in Abb. \ref{fig:expRauml} zu sehen und die gefitteten Parameter in Tabelle \ref{tab:expPara}.
 
 \begin{figure}[h]
    \centering
@@ -331,7 +331,7 @@ Dieser Plot ist in Abb. \ref{fig:expRauml} zu sehen.
    \hfill
    \subfigure[$I_\text A=2.0\,$A\label{fig:raum2}]
    {\begin{adjustbox}{width=0.48\linewidth}\input{raumladung2}\end{adjustbox}}
-   \caption{Auftragung des Anodenstroms zur Potenz $\frac{2}{3}$ gegen die Anodenspannung bei verchiedenen Heizströmen im Raumladungsgebiet}
+   \caption{Auftragung des Anodenstroms zur Potenz $\frac{2}{3}$ gegen die Anodenspannung bei verchiedenen Heizströmen im Raumladungsgebiet.}
    \label{fig:raumladung}
  \end{figure}
 
@@ -344,9 +344,10 @@ $I_\text H\,$[A]& $a\,\left[\frac{\text A^{2/3}}{\text V}\right]$	& $b\,\left[\t
 1.9 		& $0.1302\pm0.0009$ 	& $0.211\pm 0.005$		&$-1.62 \pm 0.04$	\\\hline
 2.0 		& $0.1302\pm 0.0016$	& $0.242 \pm 0.014$		&$-1.9 \pm 0.1	$	\\\hline
 \end{tabular}
-\caption{Parameter aus den Linearen Regressionen von Abb. \ref{fig:raumladung}}
+\caption{Parameter aus den Linearen Regressionen von Abb. \ref{fig:raumladung} und die sich ergebende Kontaktspannung.}
 \label{tab:ParaRaum}
 \end{table}
+
 
 \begin{figure}[!h]
 \centering
@@ -354,6 +355,20 @@ $I_\text H\,$[A]& $a\,\left[\frac{\text A^{2/3}}{\text V}\right]$	& $b\,\left[\t
 \caption{Doppeltlogarithmische Auftragung von des Anodenstroms gegen die Gesamtspannung.}
 \label{fig:expRauml}
 \end{figure}
+
+\begin{table}
+\centering
+\begin{tabular}{|c|c|}
+\hline
+$I_H\; [A]$	& Steigung $m\;[\ln\frac{A}{V}$\\\hline\hline
+1.8	& $1.47 \pm 0.04$	\\\hline
+1.9	& $1.547 \pm 0.009$	\\\hline
+2	& $1.61 \pm 0.03$	\\\hline\hline
+$\bar{m}$ & $1.549 \pm 0.008$\\\hline
+\end{tabular}
+\caption{gefitte Geradensteigung aus Abb. \ref{fig:expRauml}.}
+\label{tab:expPara}
+\end{table}
 
 \section{Diskussion}
 \label{sec:diskussion}
