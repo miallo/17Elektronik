@@ -304,9 +304,6 @@ U_K &= -\frac{b}{a} \text{ mit}\\
 Die sich ergebenden Werte können ebenfalls in Tabelle \ref{tab:ParaRaum} entnommen werden.\\
 
 
-
-\emph{$U_K$ BERECHNEN!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!}
-
 \subsection{Exponent im Raumladungsbereich}
 Nach Gl. \eqref{eq:rauml} ist für $I$ und $U_\text{ges}$ eine Relation
 \begin{align}
@@ -340,12 +337,12 @@ Dieser Plot ist in Abb. \ref{fig:expRauml} zu sehen.
 
 \begin{table}[!h]
 \centering
-\begin{tabular}{|c|c|c|}
+\begin{tabular}{|c|c|c|c|}
 \hline
-$I_\text H\,$[A]& $a\,\left[\frac{\text A^{2/3}}{\text V}\right]$	& $b\,\left[\text A^{2/3}\right]$			\\\hline\hline
-1.8 		& $0.125\pm 0.003$		& $0.173\pm 0.011$	\\\hline
-1.9 		& $0.1302\pm0.0009$ 	& $0.211\pm 0.005$	\\\hline
-2.0 		& $0.1302\pm 0.0016$	& $0.242 \pm 0.014$	\\\hline
+$I_\text H\,$[A]& $a\,\left[\frac{\text A^{2/3}}{\text V}\right]$	& $b\,\left[\text A^{2/3}\right]$ & $U_K \; [V]$	\\\hline\hline
+1.8 		& $0.125\pm 0.003$	& $0.173\pm 0.011$		&$-1.38 \pm 0.09$	\\\hline
+1.9 		& $0.1302\pm0.0009$ 	& $0.211\pm 0.005$		&$-1.62 \pm 0.04$	\\\hline
+2.0 		& $0.1302\pm 0.0016$	& $0.242 \pm 0.014$		&$-1.9 \pm 0.1	$	\\\hline
 \end{tabular}
 \caption{Parameter aus den Linearen Regressionen von Abb. \ref{fig:raumladung}}
 \label{tab:ParaRaum}
@@ -353,8 +350,8 @@ $I_\text H\,$[A]& $a\,\left[\frac{\text A^{2/3}}{\text V}\right]$	& $b\,\left[\t
 
 \begin{figure}[!h]
 \centering
-%\includegraphics{expRauml}
-\caption{Doppeltlogarithmische Auftragung von des Anodenstroms gegen die Anodenspannung.}
+\include{exp}
+\caption{Doppeltlogarithmische Auftragung von des Anodenstroms gegen die Gesamtspannung.}
 \label{fig:expRauml}
 \end{figure}
 
