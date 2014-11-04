@@ -198,7 +198,7 @@ Da die Kathode jedoch auf eine Temperatur $T$ geheizt wird, bekommen die Elektro
 Dies ist auch der Grund, warum die Vakuum-Diode einen Elektronenfluss von der Anode zur Kathode verhindert.
 Nicht alle Elektronen sind jedoch gleich schnell, so dass einige mehr kinetische besitzen als andere.
 Die Verteilung der Geschwindigkeiten basiert auf der \textsc{Fermi}-Verteilung.
-Der sich so ergebende Strom verhält sich nach der \textsc{Richardson}\emph{-Gleichung}:
+Der sich so ergebende Strom verhält sich laut \cite[S. 463]{gerthsen} nach der \textsc{Richardson}\emph{-Gleichung}:
 \begin{align}
 	j_R=A_R\cdot T^{2}\cdot \exp\left(-\frac{W_A}{k_BT}\right)\label{eq:richardson}\; .
 \end{align}
@@ -218,7 +218,7 @@ Aber da die Energien \textsc{Maxwell}-verteilt sind, haben einzelne Elektronen a
 \begin{figure}[!h]
 \centering
 \includegraphics{stromfluss}
-\caption{Stromfluss gegen die Anodenspannung aufgetragen von \cite[8.10.14, 12 Uhr]{LP17}}
+\caption{Stromfluss gegen die Anodenspannung aufgetragen von \cite[8.10.14, 12 Uhr]{LP17}.}
 \label{fig:strombild}
 \end{figure}
 
@@ -245,7 +245,7 @@ In diesem sind keine Elektronen mehr im Raumladungsbereich vorhanden und um eine
 \begin{figure}[!h]
 \centering
 \includegraphics[width=0.5\linewidth]{aufbau}
-\caption{Schaltplan der Vakuumdiode aus \cite[8.10.14, 12 Uhr]{LP17}}
+\caption{Schaltplan der Vakuumdiode aus \cite[8.10.14, 12 Uhr]{LP17}.}
 \label{fig:aufbau}
 \end{figure}
 Zunächst baut man die Schaltung aus Abb. \ref{fig:aufbau} auf.
@@ -274,13 +274,13 @@ Der Strommessung des Anodenstroms wurde eine Ungenauigkeit von $\sigma_{I_A}= I_
   \hfill
   \subfigure[$I_\text H=2.0\,$A\label{fig:heiz2}]
   {\begin{adjustbox}{width=0.48\linewidth}\input{heiz2}\end{adjustbox}}
-  \caption{Auftragung des Anodenstroms gegen die Anodenspannung bei verschiedenen Heizströmen}
+  \caption{Auftragung des Anodenstroms gegen die Anodenspannung bei verschiedenen Heizströmen.}
   \label{fig:heiz}
 \end{figure}
 \begin{figure}[!h]
 	\centering
 	\input{heiz}
-	\caption{Auftragung des Anodenstroms gegen die Anodenspannung bei unterschiedlichen Heizströmen}
+	\caption{Auftragung des Anodenstroms gegen die Anodenspannung bei unterschiedlichen Heizströmen.}
 	\label{fig:h}
 \end{figure}
 
@@ -301,8 +301,35 @@ Um die Kontaktspannung $U_K$ zu ermitteln, kann $0=a\cdot x + b$ umgestellt werd
 U_K &= -\frac{b}{a} \text{ mit}\\
 \sigma_{U_K} &= \sqrt{\frac{\sigma_b^2}{a^2}+\frac{\sigma_a^2 \cdot b^2}{a^4}}\, .
 \end{align*}
-Die sich ergebenden Werte können ebenfalls in Tabelle \ref{tab:ParaRaum} entnommen werden.\\
+Die sich ergebenden Werte können ebenfalls in Tabelle \ref{tab:ParaRaum} entnommen werden.
+Es ergibt sich ein gewichteter Mittelwert von $\overline U_K=(-1.62 \pm 0.03)\si\volt$\\
 
+\begin{figure}[h]
+   \centering
+   \subfigure[$I_\text A=1.8\,$A\label{fig:raum18}]
+   {\begin{adjustbox}{width=0.48\linewidth}\input{raumladung18}\end{adjustbox}}
+   \hfill
+   \subfigure[$I_\text A=1.9\,$A\label{fig:raum19}]
+   {\begin{adjustbox}{width=0.48\linewidth}\input{raumladung19}\end{adjustbox}}
+   \hfill
+   \subfigure[$I_\text A=2.0\,$A\label{fig:raum2}]
+   {\begin{adjustbox}{width=0.48\linewidth}\input{raumladung2}\end{adjustbox}}
+   \caption{Auftragung des Anodenstroms zur Potenz $\frac{2}{3}$ gegen die Anodenspannung bei verchiedenen Heizströmen im Raumladungsgebiet.}
+   \label{fig:raumladung}
+ \end{figure}
+
+\begin{table}[!h]
+\centering
+\begin{tabular}{|c||c|c|c|}
+\hline
+$I_\text H\,$[A]& $a\,\left[\frac{\text A^{2/3}}{\text V}\right]$	& $b\,\left[\text A^{2/3}\right]$ & $U_K \; [V]$	\\\hline\hline
+1.8 		& $0.125\pm 0.003$	& $0.173\pm 0.011$		&$-1.38 \pm 0.09$	\\\hline
+1.9 		& $0.1302\pm0.0009$ 	& $0.211\pm 0.005$		&$-1.62 \pm 0.04$	\\\hline
+2.0 		& $0.1302\pm 0.0016$	& $0.242 \pm 0.014$		&$-1.9 \pm 0.1	$	\\\hline
+\end{tabular}
+\caption{Parameter aus den Linearen Regressionen von Abb. \ref{fig:raumladung} und die sich ergebende Kontaktspannung.}
+\label{tab:ParaRaum}
+\end{table}
 
 \subsection{Exponent im Raumladungsbereich}
 Nach Gl. \eqref{eq:rauml} ist für $I$ und $U_\text{ges}$ eine Relation
@@ -321,34 +348,6 @@ Die Fehlerrechnung nach Gauss führt zu
 
 Dieser Plot ist in Abb. \ref{fig:expRauml} zu sehen und die gefitteten Parameter in Tabelle \ref{tab:expPara}.
 
-\begin{figure}[h]
-   \centering
-   \subfigure[$I_\text A=1.8\,$A\label{fig:raum18}]
-   {\begin{adjustbox}{width=0.48\linewidth}\input{raumladung18}\end{adjustbox}}
-   \hfill
-   \subfigure[$I_\text A=1.9\,$A\label{fig:raum19}]
-   {\begin{adjustbox}{width=0.48\linewidth}\input{raumladung19}\end{adjustbox}}
-   \hfill
-   \subfigure[$I_\text A=2.0\,$A\label{fig:raum2}]
-   {\begin{adjustbox}{width=0.48\linewidth}\input{raumladung2}\end{adjustbox}}
-   \caption{Auftragung des Anodenstroms zur Potenz $\frac{2}{3}$ gegen die Anodenspannung bei verchiedenen Heizströmen im Raumladungsgebiet.}
-   \label{fig:raumladung}
- \end{figure}
-
-\begin{table}[!h]
-\centering
-\begin{tabular}{|c|c|c|c|}
-\hline
-$I_\text H\,$[A]& $a\,\left[\frac{\text A^{2/3}}{\text V}\right]$	& $b\,\left[\text A^{2/3}\right]$ & $U_K \; [V]$	\\\hline\hline
-1.8 		& $0.125\pm 0.003$	& $0.173\pm 0.011$		&$-1.38 \pm 0.09$	\\\hline
-1.9 		& $0.1302\pm0.0009$ 	& $0.211\pm 0.005$		&$-1.62 \pm 0.04$	\\\hline
-2.0 		& $0.1302\pm 0.0016$	& $0.242 \pm 0.014$		&$-1.9 \pm 0.1	$	\\\hline
-\end{tabular}
-\caption{Parameter aus den Linearen Regressionen von Abb. \ref{fig:raumladung} und die sich ergebende Kontaktspannung.}
-\label{tab:ParaRaum}
-\end{table}
-
-
 \begin{figure}[!h]
 \centering
 \include{exp}
@@ -360,7 +359,7 @@ $I_\text H\,$[A]& $a\,\left[\frac{\text A^{2/3}}{\text V}\right]$	& $b\,\left[\t
 \centering
 \begin{tabular}{|c|c|}
 \hline
-$I_H\; [A]$	& Steigung $m\;[\ln\frac{A}{V}$\\\hline\hline
+$I_H\; [A]$	& Steigung $m\;[\ln\frac{A}{V}]$\\\hline\hline
 1.8	& $1.47 \pm 0.04$	\\\hline
 1.9	& $1.547 \pm 0.009$	\\\hline
 2	& $1.61 \pm 0.03$	\\\hline\hline
@@ -377,13 +376,16 @@ Auch bei der Messung des Anlaufstroms wirkte es nicht zuverlässig, da es über 
 Daraufhin verwendeten wir nur die digitalen Messgeräte.
 
 In Abb. \ref{fig:heiz} kann man erkennen, dass für die $2\,$A Messungen viele Messungen im Anlaufstrombereich gemacht wurden.
-Für die $1.8\,$A Messung wurde dies kaum noch getan, so dass sich hier kaum Aussagen für diesen Bereich machen lassen.
+Für die $1.8\,$A Messung wurden jedoch nur ca. 6 Messungen vor dem Sättigungsbereich gemacht, so dass sich hier kaum Aussagen für diesen Bereich machen lassen.
 
 Dennoch lassen die Werte aus Tabelle \ref{tab:ParaRaum} den Raumladungsbereich eingrenzen.
-Für $1.8\,$A 
+
+Der berechnete Exponent im Raumladungsbereich von $1.549\pm 0.008$ weicht von den erwarteten $\frac{3}{2}$ um 5\% ab.
+Der erwartete Wert liegt zwar nicht im Fehlerintervall, dies liegt jedoch vermutlich an den zu gering angenommenen Fehlern.
 
 
-Die berechneten Werte der Kontaktspannung $U_K$ 
+Die berechneten Werte der Kontaktspannung $U_K$ liegen in einem Intervall von $[-1.9,-1.39]\si\volt$ bei einem Fehler von höchstens $0.1\si\volt$.
+Diese Streuung ist mit 37\% der höchsten zur geringsten Messung sehr groß.
 
 \bibliography{literatur}
 \bibliographystyle{babalpha}

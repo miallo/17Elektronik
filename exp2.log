@@ -45,3 +45,191 @@ correlation matrix of the fit parameters:
                y      c      
 y               1.000 
 c              -0.826  1.000 
+
+
+*******************************************************************************
+Tue Nov  4 17:10:10 2014
+
+
+FIT:    data read from 'heiz2.dat' u (log($3+1.9)):(log($2/1000))
+        format = x:z
+	y range restricted to [* : 2.40000]
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: h(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 1093.95           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1.22941
+
+initial set of free parameter values
+
+y               = 1
+c               = 1
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.0438443
+rel. change during last iteration : -1.41066e-10
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0740307
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00548054
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+y               = 1.60541          +/- 0.02919      (1.818%)
+c               = -10.1589         +/- 0.04152      (0.4087%)
+
+
+correlation matrix of the fit parameters:
+
+               y      c      
+y               1.000 
+c              -0.826  1.000 
+
+
+*******************************************************************************
+Tue Nov  4 17:13:48 2014
+
+
+FIT:    data read from 'heiz2.dat' u (log($3+1.9)):(log($2/1000))
+        format = x:z
+	y range restricted to [* : 2.40000]
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: h(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 1093.95           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1.22941
+
+initial set of free parameter values
+
+y               = 1
+c               = 1
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.0438443
+rel. change during last iteration : -1.41066e-10
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0740307
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00548054
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+y               = 1.60541          +/- 0.02919      (1.818%)
+c               = -10.1589         +/- 0.04152      (0.4087%)
+
+
+correlation matrix of the fit parameters:
+
+               y      c      
+y               1.000 
+c              -0.826  1.000 
+
+
+*******************************************************************************
+Tue Nov  4 17:14:20 2014
+
+
+FIT:    data read from 'heiz2.dat' u (log($3+1.9)):(log($2/1000))
+        format = x:z
+	y range restricted to [* : 2.40000]
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: h(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 1093.95           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1.22941
+
+initial set of free parameter values
+
+y               = 1
+c               = 1
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.0438443
+rel. change during last iteration : -1.41066e-10
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0740307
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00548054
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+y               = 1.60541          +/- 0.02919      (1.818%)
+c               = -10.1589         +/- 0.04152      (0.4087%)
+
+
+correlation matrix of the fit parameters:
+
+               y      c      
+y               1.000 
+c              -0.826  1.000 
+
+
+*******************************************************************************
+Tue Nov  4 17:15:03 2014
+
+
+FIT:    data read from 'heiz2.dat' u (log($3+1.9)):(log($2/1000))
+        format = x:z
+	y range restricted to [* : 2.40000]
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: h(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 1093.95           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1.22941
+
+initial set of free parameter values
+
+y               = 1
+c               = 1
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.0438443
+rel. change during last iteration : -1.41066e-10
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0740307
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00548054
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+y               = 1.60541          +/- 0.02919      (1.818%)
+c               = -10.1589         +/- 0.04152      (0.4087%)
+
+
+correlation matrix of the fit parameters:
+
+               y      c      
+y               1.000 
+c              -0.826  1.000 
